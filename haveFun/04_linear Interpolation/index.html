@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <p>Before canvas</p>
+  <canvas width="600" height="400"></canvas>
+  <p>After canvas</p>
+  <div class="coordX"></div>
+  <div class="coordY"></div> -->
+  <script src="script.js"></script>
+  <!-- <canvas id=traces width=500 height=500>
+      <script type="text/javascript" charset="utf-8">
+        (function() {
+          "use strict";
+    
+          // Returns the position of the top left corner
+          // of an element in DOM content coordinates.
+          function elePos(ele) {
+            var dx = ele.offsetLeft;
+            var dy = ele.offsetTop;
+            while (ele.offsetParent) {
+              ele = ele.offsetParent;
+              dx += ele.offsetLeft;
+              dy += ele.offsetTop;
+            }
+            return {"dx": dx, "dy": dy};
+          }
+    
+          // The current mouse position in DOM content coordinates.
+          var clientX = 0.0;
+          var clientY = 0.0;
+    
+          // Setup we only need to do once.
+          var cv = document.getElementById('traces');
+          var pos = elePos(cv);
+          var ctx = cv.getContext('2d');
+          ctx.fillStyle = '#000';
+    
+          // Record the mouse position when it moves.
+          cv.addEventListener('mousemove', function(e) {
+            clientX = e.clientX;
+            clientY = e.clientY;
+          });
+    
+          // Draw a rectangle at the mouse's last know position.
+          function draw() {
+            var x = clientX - pos.dx;
+            var y = clientY - pos.dy;
+            ctx.fillRect(x, y, 5, 5);
+            window.requestAnimationFrame(draw);
+          };
+          window.requestAnimationFrame(draw);
+    
+        })();
+      </script> -->
+</body>
+</html>
